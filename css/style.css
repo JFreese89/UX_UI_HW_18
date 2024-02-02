@@ -1,0 +1,222 @@
+.inline-block {
+    display:inline-block;
+    vertical-align: top;
+  }
+  
+  .bodyimg {
+    background-image: url("//images/elegant_marble_background_with_gold_glitter_2605.jpg");
+    opacity: 0.4;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    z-index: -1;
+  }
+
+
+  .logo {
+    width: 23%;
+    height: 120px;
+    padding: 1%;
+    background-image: url("../images/My_Logo.png");
+    background-repeat: no-repeat;
+    display: grid;
+      }
+  
+  .nav { 
+    width: 73%;
+    padding: 1%;
+    display:grid;
+  }
+  
+  .navbar {
+    font-size: 44px;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "About About About"
+    "Work Work Work"
+    "Resume Resume Resume"
+    "LinkedIn E-mail Dribble"
+    "topbutton topbutton topbutton";
+  }
+
+  .navbar .socials {
+    display: grid;
+    grid-row-start: 1;
+  }
+  .sidebar-nav {
+    padding: 0;
+    max-height: none;
+    border-color:2px #003844;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: grid;
+    
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: #003844;
+  }
+
+  
+  #button {
+    background-color: #003844;
+    background-position: left;
+    background-repeat: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  
+  a linkedin {
+    background-image: url(../images/Linked_In.png);
+    background-repeat: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-column-start: 1;
+  }
+  
+  a em  {
+    background-image: url("/images/email.png");
+    background-repeat: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-column-start: 2;
+  }
+  
+  a drb  {
+    background-image: url("/images/dribble.png");
+    background-repeat: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    display: grid;
+    grid-column-start: 3;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    display: block;
+  
+  } 
+  
+  .li {
+    width: 50%;
+    margin-left: auto;
+  
+  }
+  
+  .topbutton {
+    grid-area: hover;
+    background-color: #003844;
+    color: white;
+    border-radius: 10px;
+    width: 168px;
+    height: 48px;
+    text-align: center;
+    justify-content: flex-end;
+    transition: all 2s ease;
+  }
+  
+  .topbutton:hover {
+    background-color: rgba(0, 56, 68, 0.8);
+  }
+  
+  .heroImg {
+    height: 450px;
+    padding: 25px;
+    color: #251605;
+    background-color: #83b3b3;
+    background-image: url("/images/Hero_image_my_pic.png"), url(/images/Hero_image_cats_pic.png);
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 431px 440px,  298px 244px;
+    display: grid;
+    grid-column-start: 2;
+  }
+  
+  #herobutton {
+    background-color: #003844;
+    background-position: center;
+    background-repeat: none;
+    border-radius: 10px;
+    height: 60px;
+    width: 300px;
+    padding: 20px;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    justify-content: flex-end;
+    transition: all 2s ease;
+  }
+  
+  #herobutton:hover {
+    font-size: 175%;
+  }
+  
+  .content {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+
+  body, html {
+    height: 100%;
+  }
+
+  
+  input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */ 
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+    
+    /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+      background-color: #003844;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+      background-color: rgba(0, 56, 68, 0.8);
+    }
+    
+    /* Add a background color and some padding around the form */
+    .container {
+      border-radius: 4px;
+      background-color: #83b3b3;
+      padding: 20px;
+    }
+  
+    
+     

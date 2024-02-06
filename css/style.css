@@ -3,6 +3,18 @@
     vertical-align: top;
   }
   
+  h1 {
+    font-size: 64px;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 32px;
+  }
+
   .bodyimg {
     background-image: url("//images/elegant_marble_background_with_gold_glitter_2605.jpg");
     opacity: 0.4;
@@ -111,7 +123,7 @@
     grid-column-start: 3;
   }
   
-  ul {
+  ul .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -120,6 +132,8 @@
   
   } 
   
+  ul li { padding: 5px 0px;}
+
   .li {
     width: 50%;
     margin-left: auto;
@@ -143,8 +157,11 @@
   }
   
   .heroImg {
-    height: 450px;
+    height: 500px;
+    width: 1193px;
     padding: 25px;
+    justify-content: center;
+    align-content: center;
     color: #251605;
     background-color: #83b3b3;
     background-image: url("/images/Hero_image_my_pic.png"), url(/images/Hero_image_cats_pic.png);
@@ -179,6 +196,148 @@
     margin: 0 auto;
   }
   
+
+  
+
+  
+.flexContainer {
+  display:flex;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: column;
+}
+
+ .approach, .pursuits, .strengths {
+  background-color: #FFC3C5;
+  border-radius: 50%;
+  width: 100%;
+  margin: 25px;
+  padding: 90px;
+  justify-content: center;
+}
+
+#approach, #pursuits, #strengths {
+  font-size: 24px;
+  list-style-type: circle;
+  list-style-position: inside;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.approach {
+  width: 540px;
+  height: 540px;
+}
+
+.pursuits {
+  width: 380px;
+  height: 380px;
+}
+
+.strengths {
+  width: 450px;
+  height: 450px;
+}
+
+
+
+.workGrid {
+  display:grid;
+  grid-template-areas: "project1img project1text"
+  "project2img project2text"
+   "project3img project3text";
+   margin: 15px;
+   padding: 15px;
+}
+
+#project1 {
+  height: 335px;
+  width: 927px;
+  display: grid;
+  background-color: #003844;
+  color: white;
+  font-size: 26px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "project1img project1text"
+  "project1img project1text"
+  "project1img learnmore";
+}
+
+#project1 img{
+  width:380px;
+  height: 305px;
+  object-fit: cover;
+}
+
+#project2 {
+  height: 379px;
+  width: 927px;
+  display: grid;
+  background-color: #C0A285;
+  color: #251605;
+  font-size: 26px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "project2img project2text"
+  "project2img project2text"
+  "project2img learnmore2";
+}
+
+
+#project2 img{
+  width: 390px;
+  height: 370px;
+  object-fit: cover;
+}
+
+#project3 {
+  height: 335px;
+  width: 927px;
+  display: grid;
+  background-color: #003844;
+  color: white;
+  font-size: 26px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas: "project3img project3text"
+  "project3img project3text"
+  "project3img learnmore";
+}
+
+#project3 img{
+  width:380px;
+  height: 305px;
+  object-fit: cover;
+}
+
+.learnmore {
+  color:white;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #003844;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 50px;
+  width: 160px;
+}
+
+.learnmore2 {
+  color:#251605;
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #C0A285;
+  border: 2px solid #251605;
+  border-radius: 5px;
+  height: 50px;
+  width: 160px;
+}
+
 
   body, html {
     height: 100%;
@@ -219,4 +378,203 @@
     }
   
     
-     
+     @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 35px;
+      }
+      
+      h2 {
+        font-size: 30px;
+      }
+      
+      h3 {
+        font-size: 24px;
+      }
+    
+      
+      .heroImg {
+        height: 267px;
+        width: 393px;
+        padding: 25px;
+        justify-content: baseline;
+        align-content: center;
+        color: #251605;
+        background-color: #83b3b3;
+        background-image: url("/images/Hero_image_my_pic.png");
+        background-position: left bottom;
+        background-repeat: no-repeat;
+        background-size: 199px 203px;
+        display: grid;
+        grid-column-start: 2;
+      }
+      
+  
+  #herobutton {
+    background-color: #003844;
+    background-position: right;
+    background-repeat: none;
+    border-radius: 10px;
+    height: 44px;
+    width: 110px;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    justify-content: flex-end;
+    transition: all 2s ease;
+  }
+  
+  #herobutton:hover {
+    font-size: 175%;
+  }
+  
+  .content {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+
+  
+
+  
+.flexContainer {
+  display:flex;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: column;
+}
+
+ .approach, .pursuits, .strengths {
+  background-color: #FFC3C5;
+  border-radius: 50%;
+  width: 100%;
+  margin: 25px;
+  padding: 90px;
+  justify-content: center;
+}
+
+#approach, #pursuits, #strengths {
+  font-size: 12px;
+  list-style-type: circle;
+  list-style-position: inside;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.approach {
+  width: 283px;
+  height: 283px;
+}
+
+.pursuits {
+  width: 184px;
+  height: 184px;
+}
+
+.strengths {
+  width: 205px;
+  height: 205px;
+}
+
+      .workGrid {
+        display:grid;
+        grid-template-areas: "project1img" 
+        "project1text"
+        "project2img" 
+        "project2text"
+         "project3img" 
+         "project3text";
+         margin: 15px;
+         padding: 15px;
+      }
+      
+      #project1 {
+        height: 388px;
+        width: 355px;
+        display: grid;
+        background-color: #003844;
+        color: white;
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: "project1img"
+        "project1text"
+        "learnmore";
+      }
+      
+      #project1 img{
+        width:272px;
+        height: 218px;
+        object-fit: cover;
+      }
+      
+      #project2 {
+        height: 485px;
+        width: 355px;
+        display: grid;
+        background-color: #C0A285;
+        color: #251605;
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: "project2img"
+        "project2text"
+        "learnmore2";
+      }
+      
+      
+      #project2 img{
+        width: 280px;
+        height: 264px;
+        object-fit: cover;
+      }
+      
+      #project3 {
+        height: 388px;
+        width: 355px;
+        display: grid;
+        background-color: #003844;
+        color: white;
+        font-size: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas: "project3img"
+        "project3text"
+        "learnmore";
+      }
+      
+      #project3 img{
+        width:272px;
+        height: 218px;
+        object-fit: cover;
+      }
+      
+      .learnmore {
+        color:white;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #003844;
+        border: 2px solid white;
+        border-radius: 5px;
+        height: 40px;
+        width: 125px;
+      }
+      
+      .learnmore2 {
+        color:#251605;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: #C0A285;
+        border: 2px solid #251605;
+        border-radius: 5px;
+        height: 40px;
+        width: 125px;
+      }
+      
+     }

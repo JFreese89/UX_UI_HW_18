@@ -29,7 +29,7 @@
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Resume</a></li>
       
-                  </ul>
+                  </ul class="socials">
                   <section class="socials">
                     <a href="#LI">
                       <img src="/images/Linked_In.png">
@@ -69,68 +69,82 @@
 
 <!--Body-->
 <div class=body>
+  <!--My Work Section Constructed using CSS Grid-->
+  <div class="workGrid">
     <section class="projects">
-        <h1>My Projects</h1>
+        <h2>My Projects</h2>
         <div class="projects">
+          <div class="workGrid" id="project1">
             <div class="project1img">
                 <img src="images/Mockup_Treasury.png">
-            </div>
-            <div class="project1">
-                <h4>U.S. Department of Treasury</h4>
+            </div class=project1text>
+                <h3>U.S. Department of Treasury</h3>
                 <p>A redesign of the U.S. Treasury page to improve its usability and flow
                 </p>
                 <button class="learnmore">Learn More
                 </button>
-            </div>
+        </div>
+          
+          <div class="workGrid" id="project2">
             <div class="project2img">
                 <img src="images/mockups_TTails.png">
-            </div>
-            <div class="project2">
-                <h4>Travel Tails</h4>
+            </div class="project2text">
+                <h3>Travel Tails</h3>
                 <p>New app design on mobile to connect pet parents to pet friendly activities while traveling
                 </p>
-                <button class="learnmore">Learn More
+                <button class="learnmore2">Learn More
                 </button>
-            </div>
+         </div>
+
+         <div class="workGrid" id="project3">
             <div class="project3img">
                 <img src="images/Mockup_Fernside.png">
-            </div>
-            <div class="project3">
-                <h4>Fernside</h4>
+            </div class=project3text>
+                <h3>Fernside</h3>
                 <p>A redesign of the Fernside webpage to make the enrollment process easier and more accesible
                 </p>
                 <button class="learnmore">Learn More
                 </button>
             </div>
-        </div>
+       </div>
     </section>
-    <section class="skills">
+  </div>
+  <!--My UX Skills section coded using CSS flex-->
+    <div class="flexContainer">
+       <section class="flexContainer" id="skills">
         <h2>My Talents</h2>
         <div class="talents">
             <div class="approach">
-                <h4>My Approach</h4>
-                <p>In user research, I utilize open questions (e.g. “How might you...?” “How does this page make you feel?”)
-                    I compile the information I gather from user research into affinity diagrams and empathy maps in order to empathize with the user and search for a proposed solution which works for them.
-                </p>
+                <h3>My Approach</h3>
+                <ul id="approach">
+                  <li>In user research, I utilize open questions (e.g. “How might you...?” “How does this page make you feel?”)
+                       
+                  </li>
+                  <li>I compile the information I gather from user research into affinity diagrams and empathy maps in order to empathize with the user and search for a proposed solution which works for them. </li>
+                </ul>
             </div>
             <div class="pursuits">
-                <h4>Pursuits that ignite my passion</h4>
-                <p>Information Architecture
-                    Organizational Structuring</p>
+                <h3>Pursuits that ignite my passion</h3>
+                <ul id="pursuits">
+                  <li>Information Architecture</li>
+                  <li>Organizational Structuring</li>
+                </ul>
                 <img src="images/sparkle_icon.png">
             </div>
             <div class="strengths">
-                <h4>My creative strengths</h4>
-                <p>Card Sorting
-                    Site Mapping
-                    Web analytics and heuristics
-                    Sketching and wireframes
-                    Data Synthesis & Analysis</p>
+                <h3>My creative strengths</h3>
+                <ul id="strengths">
+                  <li>Card Sorting</li>
+                  <li>Site Mapping</li>
+                  <li>Web analytics and heuristics</li>
+                  <li>Sketching and wireframes</li>
+                  <li>Data Synthesis & Analysis</li>
+                </ul>
                     <img src="images/paper_balls_icon.png">
             </div>
         </div>
         <div class="tools">
-            <h2>Tools I Know</h2>
+            <h3>Tools I Know</h3>
             <img src="images/drive_icon.png">
             <img src="images/AI_icon.png">
             <img src="images/Miro_icon.png">
@@ -144,6 +158,7 @@
             <img src="images/git_icon.png">
         </div>
     </section>
+    </div>
 </div>
 
 <!--Footer-->
